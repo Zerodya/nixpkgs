@@ -8,6 +8,9 @@
   procps,
   psmisc,
   libnotify,
+  xdotool,
+  kdotool,
+  kdePackages
 }:
 
 stdenv.mkDerivation (finalAttrs: {
@@ -55,6 +58,9 @@ stdenv.mkDerivation (finalAttrs: {
           procps
           psmisc
           libnotify
+          xdotool
+          kdotool
+          kdePackages.qttools
         ]
       }
   '';
